@@ -43,7 +43,7 @@ const AuthModal = () => {
         >
             <Auth
                 supabaseClient={supabaseClient}
-                providers={["github"]}
+                providers={["google"]}
                 redirectTo={getURL()}
                 magicLink={true}
                 appearance={{
