@@ -9,7 +9,7 @@ export default async function Liked() {
     const songs = await getLikedSongs();
 
     return (
-        <div className="bg-neutral-900 rounded-full w-full h-full overflow-hidden overflow-y-auto">
+        <div className="bg-neutral-900 rounded-lg w-full h-full overflow-hidden overflow-y-auto">
             <Header>
                 <div className="mt-20">
                     <div className="flex flex-col md:flex-row items-center gap-x-5">
@@ -17,13 +17,13 @@ export default async function Liked() {
                             <Image
                                 className="object-cover"
                                 src="/images/liked.png"
-                                width={100}
-                                height={100}
+                                width={500}
+                                height={500}
                                 alt="Playlist"
                             />
                         </div>
                         <div className="flex flex-col gap-y-2 mt-4 md:mt-0">
-                            <p className="hidden md:block font-semibold text-sm">
+                            <p className="hidden md:block font-semibold text-md">
                                 Playlist
                             </p>
                             <h1 className="text-white text-4xl sm:text-5xl lg:text-7xl font-bold">
